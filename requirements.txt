@@ -1,0 +1,11 @@
+openai
+epicbox
+ipykernel
+matplotlib
+pandas
+numpy
+python-leetcode
+flair
+sentence_transformers
+pyenchant
+ipywidgets
