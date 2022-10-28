@@ -30,3 +30,7 @@ The notebook `results.ipynb` allows to visualize and use the test results. The r
 The `copilot` folder contains the package to use copilot.
 
 The `utils` folder contains useful functions for code generation and testing.
+
+## Data
+
+Programs generated for [Piloting Copilot and Codex: Hot Temperature, Cold Prompts, or Black Magic?](https://arxiv.org/abs/2210.14699) are available on [Zenodo](https://zenodo.org/record/7261545)
