@@ -62,22 +62,24 @@ class Copilot:
     def set_editor_info(self):
         """Set the editor info"""
         self.agent.send({
-            "method": "initialize", 
+            "method": "initialize",
+            "workspace": {"workspaceFolders": True},
             "id": self.agent.id,
             "params": {"capabilities": {}}
         })
         self.agent.id += 1
         self.agent.agent_request("setEditorInfo", {
             "editorPluginInfo": {
-                "version": "1.4.2",
+                "version": "1.8.0",
                 "name": "copilot.vim"
             },
             "editorInfo": {
-                "version": "0.7.0",
+                "version": "0.8.1",
                 "name": "Neovim"
             }
         })
         # Clear stdin
+        self.agent.get_output()
         self.agent.get_output()
         self.agent.get_output()
 
